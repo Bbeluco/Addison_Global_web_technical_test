@@ -1,15 +1,17 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {CustomButton} from '../atoms/CustomButton';
-import {stylesType} from '../../types/stylesType';
+import {ButtonsRelatedToPromoType} from '../../types/buttonsRelatedToPromo';
 
 export function ButtonsRelatedToPromo({
   styleParent,
-}: Omit<stylesType, 'styleChildren'>): React.JSX.Element {
+  textJoinNowButtonText,
+  textTermsAndConditionsButtonText,
+}: ButtonsRelatedToPromoType): React.JSX.Element {
   return (
     <View style={styleParent}>
       <CustomButton
-        text={'Terms & Conditions'}
+        text={textTermsAndConditionsButtonText}
         styleParent={[
           stylesTermsAndConditions.button,
           stylesCustomButtonDefault.button,
@@ -21,7 +23,7 @@ export function ButtonsRelatedToPromo({
       />
 
       <CustomButton
-        text={'Join Now'}
+        text={textJoinNowButtonText}
         styleParent={[stylesJoinNow.button, stylesCustomButtonDefault.button]}
         styleChildren={[stylesJoinNow.text, stylesCustomButtonDefault.text]}
       />

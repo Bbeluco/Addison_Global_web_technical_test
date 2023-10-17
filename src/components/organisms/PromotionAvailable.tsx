@@ -19,6 +19,8 @@ export function PromotionAvailable(props: PromotionType): React.JSX.Element {
       />
       <ButtonsRelatedToPromo
         styleParent={styleButtonsRelatedToPromo.parentView}
+        textTermsAndConditionsButtonText={props.termsAndConditionsButtonText}
+        textJoinNowButtonText={props.joinNowButtonText}
       />
     </View>
   );
