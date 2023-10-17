@@ -1,6 +1,6 @@
 export type ResponseType = PromotionType[];
 
-type PromotionType = {
+export type PromotionType = {
   id: string;
   name: string;
   description: string;

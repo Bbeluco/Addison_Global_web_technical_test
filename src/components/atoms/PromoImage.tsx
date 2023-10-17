@@ -1,16 +1,14 @@
 import React from 'react';
 import {Image, View} from 'react-native';
-import {stylesType} from '../../types/stylesType';
+import {PromoImageType} from '../../types/promoImageType';
 
 export function PromoImage({
+  imageLink,
   styleChildren,
-}: Omit<stylesType, 'styleParent'>): React.JSX.Element {
+}: PromoImageType): React.JSX.Element {
   return (
     <View>
-      <Image
-        style={styleChildren}
-        source={{uri: 'https://via.placeholder.com/600x300'}}
-      />
+      <Image style={styleChildren} source={{uri: imageLink}} />
     </View>
   );
 }

@@ -1,13 +1,17 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import {PromotionType} from '../../types/api_result';
 import {PromoImage} from '../atoms/PromoImage';
 import {ButtonsRelatedToPromo} from '../molecules/ButtonsRelatedToPromo';
 import {PromoInfo} from '../molecules/PromoInfo';
 
-export function PromotionAvailable(): React.JSX.Element {
+export function PromotionAvailable(props: PromotionType): React.JSX.Element {
   return (
     <View style={stylePromotionAvailable.view}>
-      <PromoImage styleChildren={stylePromoImage.img} />
+      <PromoImage
+        imageLink={props.heroImageUrl}
+        styleChildren={stylePromoImage.img}
+      />
       <PromoInfo styleParent={stylePromoInfo.view} />
       <ButtonsRelatedToPromo
         styleParent={styleButtonsRelatedToPromo.parentView}
