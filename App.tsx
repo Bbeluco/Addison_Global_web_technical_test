@@ -1,12 +1,8 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {ButtonsRelatedToPromo} from './src/components/molecules/ButtonsRelatedToPromo';
 
 function App(): JSX.Element {
-  return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
-  );
+  return <ButtonsRelatedToPromo />;
 }
 
 export default App;
