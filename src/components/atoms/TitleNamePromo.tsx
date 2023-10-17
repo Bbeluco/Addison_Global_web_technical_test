@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text, View} from 'react-native';
 import {PromoInfoType} from '../../types/promoInfoType';
 
-export function TextInformationAboutPromo({
+export function TitleNamePromo({
   text,
   styleChildren,
 }: PromoInfoType): React.JSX.Element {
