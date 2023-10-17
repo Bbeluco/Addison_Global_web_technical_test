@@ -34,10 +34,12 @@ const stylesCustomButtonDefault = StyleSheet.create({
     width: '40%',
     borderRadius: 5,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
     padding: 5,
     fontWeight: 'bold',
+    fontSize: 12,
   },
 });
 

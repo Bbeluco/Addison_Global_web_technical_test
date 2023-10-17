@@ -5,8 +5,8 @@ import {PromoInfo} from '../molecules/PromoInfo';
 
 export function PromotionAvailable(): React.JSX.Element {
   return (
-    <View>
-      <PromoInfo />
+    <View style={stylePromotionAvailable.view}>
+      <PromoInfo styleParent={stylePromoInfo.view} />
       <ButtonsRelatedToPromo
         styleParent={styleButtonsRelatedToPromo.parentView}
       />
@@ -18,6 +18,19 @@ const styleButtonsRelatedToPromo = StyleSheet.create({
   parentView: {
     justifyContent: 'space-between',
     flexDirection: 'row',
-    padding: 5,
+    padding: 10,
+  },
+});
+
+const stylePromotionAvailable = StyleSheet.create({
+  view: {
+    backgroundColor: '#e0dcdc',
+    margin: 15,
+  },
+});
+
+const stylePromoInfo = StyleSheet.create({
+  view: {
+    alignItems: 'center',
   },
 });
