@@ -1,30 +1,61 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {CustomButton} from '../atoms/CustomButton';
+import {stylesType} from '../../types/stylesType';
 
-export function ButtonsRelatedToPromo(): React.JSX.Element {
+export function ButtonsRelatedToPromo({
+  styleParent,
+}: Omit<stylesType, 'styleChildren'>): React.JSX.Element {
   return (
-    <View>
+    <View style={styleParent}>
       <CustomButton
         text={'Terms & Conditions'}
-        styleButton={stylesTermsAndConditions.button}
-        styleTextButton={stylesTermsAndConditions.text}
+        styleParent={[
+          stylesTermsAndConditions.button,
+          stylesCustomButtonDefault.button,
+        ]}
+        styleChildren={[
+          stylesTermsAndConditions.text,
+          stylesCustomButtonDefault.text,
+        ]}
+      />
+
+      <CustomButton
+        text={'Join Now'}
+        styleParent={[stylesJoinNow.button, stylesCustomButtonDefault.button]}
+        styleChildren={[stylesJoinNow.text, stylesCustomButtonDefault.text]}
       />
     </View>
   );
 }
 
-const stylesTermsAndConditions = StyleSheet.create({
+const stylesCustomButtonDefault = StyleSheet.create({
   button: {
     width: '40%',
-    borderWidth: 2,
-    borderColor: 'gray',
     borderRadius: 5,
     alignItems: 'center',
   },
   text: {
-    color: 'gray',
     padding: 5,
     fontWeight: 'bold',
+  },
+});
+
+const stylesTermsAndConditions = StyleSheet.create({
+  button: {
+    borderWidth: 2,
+    borderColor: 'gray',
+  },
+  text: {
+    color: 'gray',
+  },
+});
+
+const stylesJoinNow = StyleSheet.create({
+  button: {
+    backgroundColor: 'gray',
+  },
+  text: {
+    color: 'white',
   },
 });

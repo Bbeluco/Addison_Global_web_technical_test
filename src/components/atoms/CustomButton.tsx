@@ -1,22 +1,15 @@
 import React from 'react';
-import {TouchableOpacity, Text, StyleSheet} from 'react-native';
-
-type CustomButtonType = {
-  text: string;
-  styleButton: StyleSheet.NamedStyles<any> | StyleSheet.NamedStyles<unknown>;
-  styleTextButton:
-    | StyleSheet.NamedStyles<any>
-    | StyleSheet.NamedStyles<unknown>;
-};
+import {TouchableOpacity, Text} from 'react-native';
+import {CustomButtonType} from '../../types/customButtonType';
 
 export function CustomButton({
   text,
-  styleButton,
-  styleTextButton,
+  styleParent,
+  styleChildren,
 }: CustomButtonType): React.JSX.Element {
   return (
-    <TouchableOpacity style={styleButton}>
-      <Text style={styleTextButton}>{text}</Text>
+    <TouchableOpacity style={styleParent}>
+      <Text style={styleChildren}>{text}</Text>
     </TouchableOpacity>
   );
 }

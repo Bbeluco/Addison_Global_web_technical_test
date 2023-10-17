@@ -1,8 +1,8 @@
 import React from 'react';
-import {ButtonsRelatedToPromo} from './src/components/molecules/ButtonsRelatedToPromo';
+import {PromotionAvailable} from './src/components/organisms/PromotionAvailable';
 
 function App(): JSX.Element {
-  return <ButtonsRelatedToPromo />;
+  return <PromotionAvailable />;
 }
 
 export default App;
