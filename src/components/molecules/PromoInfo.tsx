@@ -2,16 +2,21 @@ import React from 'react';
 import {TextInformationAboutPromo} from '../atoms/TextInformationAboutPromo';
 import {StyleSheet, View} from 'react-native';
 import {TitleNamePromo} from '../atoms/TitleNamePromo';
-import {stylesType} from '../../types/stylesType';
+import {PromoInfoType} from '../../types/promoInfoType';
 
 export function PromoInfo({
   styleParent,
-}: Omit<stylesType, 'styleChildren'>): React.JSX.Element {
+  titlePromo,
+  descPromo,
+}: PromoInfoType): React.JSX.Element {
   return (
     <View style={styleParent}>
-      <TitleNamePromo text="TITULO" styleChildren={styleTitleNamePromo.text} />
+      <TitleNamePromo
+        text={titlePromo}
+        styleChildren={styleTitleNamePromo.text}
+      />
       <TextInformationAboutPromo
-        text="Lorem ipsum gigante"
+        text={descPromo}
         styleChildren={styleTextInformationAboutPromo.text}
       />
     </View>
@@ -23,6 +28,7 @@ const styleTextInformationAboutPromo = StyleSheet.create({
     fontSize: 12,
     color: 'gray',
     fontWeight: '600',
+    padding: 10,
   },
 });
 

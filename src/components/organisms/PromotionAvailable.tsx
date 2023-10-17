@@ -12,7 +12,11 @@ export function PromotionAvailable(props: PromotionType): React.JSX.Element {
         imageLink={props.heroImageUrl}
         styleChildren={stylePromoImage.img}
       />
-      <PromoInfo styleParent={stylePromoInfo.view} />
+      <PromoInfo
+        styleParent={stylePromoInfo.view}
+        titlePromo={props.name}
+        descPromo={props.description}
+      />
       <ButtonsRelatedToPromo
         styleParent={styleButtonsRelatedToPromo.parentView}
       />

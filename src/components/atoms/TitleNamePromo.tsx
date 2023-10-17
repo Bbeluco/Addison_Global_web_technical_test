@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import {PromoInfoType} from '../../types/promoInfoType';
+import {DescribePromoType} from '../../types/describePromoType';
 
 export function TitleNamePromo({
   text,
   styleChildren,
-}: PromoInfoType): React.JSX.Element {
+}: DescribePromoType): React.JSX.Element {
   return (
     <View>
       <Text style={styleChildren}>{text}</Text>
