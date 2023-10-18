@@ -1,28 +1,40 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import {PromotionType} from '../../types/api_result';
+import {ScrollView, StyleSheet, View} from 'react-native';
+import {PromotionAvailableType} from '../../types/promotionAvailableType';
 import {PromoImage} from '../atoms/PromoImage';
 import {ButtonsRelatedToPromo} from '../molecules/ButtonsRelatedToPromo';
 import {PromoInfo} from '../molecules/PromoInfo';
 
-export function PromotionAvailable(props: PromotionType): React.JSX.Element {
+export function PromotionAvailable({
+  promotions,
+}: PromotionAvailableType): React.JSX.Element {
   return (
-    <View style={stylePromotionAvailable.view}>
-      <PromoImage
-        imageLink={props.heroImageUrl}
-        styleChildren={stylePromoImage.img}
-      />
-      <PromoInfo
-        styleParent={stylePromoInfo.view}
-        titlePromo={props.name}
-        descPromo={props.description}
-      />
-      <ButtonsRelatedToPromo
-        styleParent={styleButtonsRelatedToPromo.parentView}
-        textTermsAndConditionsButtonText={props.termsAndConditionsButtonText}
-        textJoinNowButtonText={props.joinNowButtonText}
-      />
-    </View>
+    <ScrollView>
+      {promotions.map((promo, index) => {
+        return (
+          <View
+            style={stylePromotionAvailable.view}
+            key={Math.random() * index}>
+            <PromoImage
+              imageLink={promo.heroImageUrl}
+              styleChildren={stylePromoImage.img}
+            />
+            <PromoInfo
+              styleParent={stylePromoInfo.view}
+              titlePromo={promo.name}
+              descPromo={promo.description}
+            />
+            <ButtonsRelatedToPromo
+              styleParent={styleButtonsRelatedToPromo.parentView}
+              textTermsAndConditionsButtonText={
+                promo.termsAndConditionsButtonText
+              }
+              textJoinNowButtonText={promo.joinNowButtonText}
+            />
+          </View>
+        );
+      })}
+    </ScrollView>
   );
 }
 
