@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {Screens} from './src/screens/Screens';
 import {NavigationContainer} from '@react-navigation/native';
-import {usePromotionsHooks} from './src/hooks/usePromotionsHooks';
-import {getCurrentPromotions} from './src/utils/requestApiForPromotions';
+import {getCurrentPromotions} from '@customUtils/requestApiForPromotions';
+import {usePromotionsHooks} from '@hooks/usePromotionsHooks';
 
 function App(): React.JSX.Element {
   const {promotionsAvailable, setPromotionsAvailable} = usePromotionsHooks();

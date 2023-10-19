@@ -1,6 +1,6 @@
 // import axios, {AxiosResponse} from 'axios';
-import {API_RESULT_SUCSESS_MOCK} from '../constants';
-import {ResponseType} from '../types/api_result';
+import {API_RESULT_SUCSESS_MOCK} from '@constants';
+import {ResponseType} from '@customTypes/api_result';
 
 export async function getCurrentPromotions(): Promise<ResponseType> {
   try {

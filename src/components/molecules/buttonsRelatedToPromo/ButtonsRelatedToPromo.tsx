@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import {CustomButton} from '../../atoms/customButton/CustomButton';
-import {ButtonsRelatedToPromoType} from '../../../types/buttonsRelatedToPromo';
+import {CustomButton} from '@components/atoms/customButton/CustomButton';
+import {ButtonsRelatedToPromoType} from '@customTypes/buttonsRelatedToPromo';
 import {
   stylesCustomButtonDefault,
   stylesTermsAndConditions,

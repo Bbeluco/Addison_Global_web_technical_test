@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {ResponseType} from '../types/api_result';
+import {ResponseType} from '@customTypes/api_result';
 
 export function usePromotionsHooks() {
   const [promotionsAvailable, setPromotionsAvailable] = useState<ResponseType>(

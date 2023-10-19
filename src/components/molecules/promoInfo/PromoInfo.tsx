@@ -1,8 +1,8 @@
 import React from 'react';
-import {TextInformationAboutPromo} from '../../atoms/textInformationAboutPromo/TextInformationAboutPromo';
+import {TextInformationAboutPromo} from '@components/atoms/textInformationAboutPromo/TextInformationAboutPromo';
 import {View} from 'react-native';
-import {TitleNamePromo} from '../../atoms/titleNamePromo/TitleNamePromo';
-import {PromoInfoType} from '../../../types/promoInfoType';
+import {TitleNamePromo} from '@components/atoms/titleNamePromo/TitleNamePromo';
+import {PromoInfoType} from '@customTypes/promoInfoType';
 import {styleTextInformationAboutPromo, styleTitleNamePromo} from './styles';
 
 export function PromoInfo({

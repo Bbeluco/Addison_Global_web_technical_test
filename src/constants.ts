@@ -1,4 +1,4 @@
-import {ResponseType} from './types/api_result';
+import {ResponseType} from '@customTypes/api_result';
 
 export const API_RESULT_SUCSESS_MOCK: ResponseType = [
   {
