@@ -8,7 +8,10 @@ function App(): React.JSX.Element {
   const {promotionsAvailable, setPromotionsAvailable} = usePromotionsHooks();
 
   useEffect(() => {
-    setPromotionsAvailable(getCurrentPromotions());
+    const requestInfo = async () => {
+      return await getCurrentPromotions();
+    };
+    requestInfo().then(res => setPromotionsAvailable(res));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
