@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TitleNamePromo /> should render and reflect the text passed as props 1`] = `
+<View>
+  <Text
+    style={{}}
+  >
+    Unit test
+  </Text>
+</View>
+`;

@@ -8,7 +8,11 @@ export function PromoImage({
 }: PromoImageType): React.JSX.Element {
   return (
     <View>
-      <Image style={styleChildren} source={{uri: imageLink}} />
+      <Image
+        style={styleChildren}
+        source={{uri: imageLink}}
+        testID={'promo_image'}
+      />
     </View>
   );
 }
