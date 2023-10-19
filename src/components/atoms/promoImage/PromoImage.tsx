@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, View} from 'react-native';
-import {PromoImageType} from '../../types/promoImageType';
+import {PromoImageType} from '../../../types/promoImageType';
 
 export function PromoImage({
   imageLink,

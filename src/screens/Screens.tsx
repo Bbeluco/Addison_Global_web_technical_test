@@ -1,6 +1,6 @@
 import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {PromotionAvailable} from '../components/organisms/PromotionAvailable';
+import {PromotionAvailable} from '../components/organisms/promotionAvailable/PromotionAvailable';
 import {ResponseType} from '../types/api_result';
 
 const Tab = createMaterialTopTabNavigator();

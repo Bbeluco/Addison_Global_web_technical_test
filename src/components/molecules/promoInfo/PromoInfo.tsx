@@ -1,8 +1,8 @@
 import React from 'react';
-import {TextInformationAboutPromo} from '../atoms/TextInformationAboutPromo';
+import {TextInformationAboutPromo} from '../../atoms/textInformationAboutPromo/TextInformationAboutPromo';
 import {StyleSheet, View} from 'react-native';
-import {TitleNamePromo} from '../atoms/TitleNamePromo';
-import {PromoInfoType} from '../../types/promoInfoType';
+import {TitleNamePromo} from '../../atoms/titleNamePromo/TitleNamePromo';
+import {PromoInfoType} from '../../../types/promoInfoType';
 
 export function PromoInfo({
   styleParent,

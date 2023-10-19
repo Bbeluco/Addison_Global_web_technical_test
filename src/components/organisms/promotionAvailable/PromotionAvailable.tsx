@@ -1,9 +1,9 @@
 import React from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
-import {PromotionAvailableType} from '../../types/promotionAvailableType';
-import {PromoImage} from '../atoms/PromoImage';
-import {ButtonsRelatedToPromo} from '../molecules/ButtonsRelatedToPromo';
-import {PromoInfo} from '../molecules/PromoInfo';
+import {PromotionAvailableType} from '../../../types/promotionAvailableType';
+import {PromoImage} from '../../atoms/promoImage/PromoImage';
+import {ButtonsRelatedToPromo} from '../../molecules/buttonsRelatedToPromo/ButtonsRelatedToPromo';
+import {PromoInfo} from '../../molecules/promoInfo/PromoInfo';
 
 export function PromotionAvailable({
   promotions,

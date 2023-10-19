@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import {DescribePromoType} from '../../types/describePromoType';
+import {DescribePromoType} from '../../../types/describePromoType';
 
 export function TitleNamePromo({
   text,

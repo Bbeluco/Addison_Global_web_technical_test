@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {CustomButton} from '../atoms/CustomButton';
-import {ButtonsRelatedToPromoType} from '../../types/buttonsRelatedToPromo';
+import {CustomButton} from '../../atoms/customButton/CustomButton';
+import {ButtonsRelatedToPromoType} from '../../../types/buttonsRelatedToPromo';
 
 export function ButtonsRelatedToPromo({
   styleParent,
