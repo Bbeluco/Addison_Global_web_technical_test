@@ -1,14 +1,20 @@
-import React from 'react';
-import {PromotionAvailable} from './src/components/organisms/PromotionAvailable';
-import {API_RESULT_SUCSESS_MOCK} from './src/constants';
-import {ScrollView, View} from 'react-native';
+import React, {useEffect} from 'react';
 import {Screens} from './src/screens/Screens';
 import {NavigationContainer} from '@react-navigation/native';
+import {usePromotionsHooks} from './src/hooks/usePromotionsHooks';
+import {getCurrentPromotions} from './src/utils/requestApiForPromotions';
 
 function App(): React.JSX.Element {
+  const {promotionsAvailable, setPromotionsAvailable} = usePromotionsHooks();
+
+  useEffect(() => {
+    setPromotionsAvailable(getCurrentPromotions());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <NavigationContainer>
-      <Screens />
+      <Screens apiResponse={promotionsAvailable} />
     </NavigationContainer>
   );
 }
