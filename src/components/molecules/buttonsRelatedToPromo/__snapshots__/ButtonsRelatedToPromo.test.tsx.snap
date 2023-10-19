@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonsRelatedToPromo /> UI test 1`] = `
+<View
+  style={{}}
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "borderColor": "gray",
+        "borderRadius": 5,
+        "borderWidth": 2,
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": "40%",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "gray",
+          },
+          {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "padding": 5,
+          },
+        ]
+      }
+    >
+      Terms & Conditions
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "gray",
+        "borderRadius": 5,
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": "40%",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "white",
+          },
+          {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "padding": 5,
+          },
+        ]
+      }
+    >
+      Join Now
+    </Text>
+  </View>
+</View>
+`;
