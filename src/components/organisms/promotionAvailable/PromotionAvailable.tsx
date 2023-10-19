@@ -1,9 +1,15 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {PromotionAvailableType} from '../../../types/promotionAvailableType';
 import {PromoImage} from '../../atoms/promoImage/PromoImage';
 import {ButtonsRelatedToPromo} from '../../molecules/buttonsRelatedToPromo/ButtonsRelatedToPromo';
 import {PromoInfo} from '../../molecules/promoInfo/PromoInfo';
+import {
+  styleButtonsRelatedToPromo,
+  stylePromotionAvailable,
+  stylePromoInfo,
+  stylePromoImage,
+} from './styles';
 
 export function PromotionAvailable({
   promotions,
@@ -37,31 +43,3 @@ export function PromotionAvailable({
     </ScrollView>
   );
 }
-
-const styleButtonsRelatedToPromo = StyleSheet.create({
-  parentView: {
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    padding: 10,
-  },
-});
-
-const stylePromotionAvailable = StyleSheet.create({
-  view: {
-    backgroundColor: '#e0dcdc',
-    margin: 15,
-  },
-});
-
-const stylePromoInfo = StyleSheet.create({
-  view: {
-    alignItems: 'center',
-  },
-});
-
-const stylePromoImage = StyleSheet.create({
-  img: {
-    width: '100%',
-    height: 150,
-  },
-});

@@ -1,7 +1,12 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import {CustomButton} from '../../atoms/customButton/CustomButton';
 import {ButtonsRelatedToPromoType} from '../../../types/buttonsRelatedToPromo';
+import {
+  stylesCustomButtonDefault,
+  stylesTermsAndConditions,
+  stylesJoinNow,
+} from './styles';
 
 export function ButtonsRelatedToPromo({
   styleParent,
@@ -30,36 +35,3 @@ export function ButtonsRelatedToPromo({
     </View>
   );
 }
-
-const stylesCustomButtonDefault = StyleSheet.create({
-  button: {
-    width: '40%',
-    borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    padding: 5,
-    fontWeight: 'bold',
-    fontSize: 12,
-  },
-});
-
-const stylesTermsAndConditions = StyleSheet.create({
-  button: {
-    borderWidth: 2,
-    borderColor: 'gray',
-  },
-  text: {
-    color: 'gray',
-  },
-});
-
-const stylesJoinNow = StyleSheet.create({
-  button: {
-    backgroundColor: 'gray',
-  },
-  text: {
-    color: 'white',
-  },
-});
