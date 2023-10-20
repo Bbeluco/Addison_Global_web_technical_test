@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PromoInfo /> UI test 1`] = `
+<View
+  style={{}}
+>
+  <View>
+    <Text
+      style={
+        {
+          "fontSize": 24,
+        }
+      }
+    >
+      New promo
+    </Text>
+  </View>
+  <View>
+    <Text
+      style={
+        {
+          "color": "gray",
+          "fontSize": 12,
+          "fontWeight": "600",
+          "padding": 10,
+        }
+      }
+    >
+      ABC123
+    </Text>
+  </View>
+</View>
+`;

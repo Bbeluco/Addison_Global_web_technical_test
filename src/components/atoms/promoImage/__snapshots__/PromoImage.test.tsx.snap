@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PromoImage /> should render and has sorce passed as prop 1`] = `
+<View>
+  <Image
+    source={
+      {
+        "uri": "https://via.placeholder.com/600x300",
+      }
+    }
+    style={{}}
+    testID="promo_image"
+  />
+</View>
+`;
